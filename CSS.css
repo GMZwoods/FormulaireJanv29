@@ -241,7 +241,8 @@ textarea {
         content: "";
     }
     body{
-        margin: 0 auto;
+        width: 550px;
+        margin: 20px auto;
     }
     pre {
         white-space: pre-wrap !important;
