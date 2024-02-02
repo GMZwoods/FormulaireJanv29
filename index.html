@@ -28,6 +28,7 @@
   <form action="mailto:someone@example.com" onsubmit="Validation()" method="post">
     <p>Formulaire de paiement</p>
     <p>Information de contact</p>
+  <fieldset>
     <div class="contact">
       Nom :
       <input id="NomUtilisateur" type="text" required placeholder="Nom" pattern="[A-z]+">
@@ -50,10 +51,10 @@
       </select>
       <label for="ProvinceId"></label>
     </div>
-
+  </fieldset>
     <!--**********************************************************************************-->
     <p>Informations de paiement</p>
-
+  <fieldset>
     <div class="Paiement">
       Type de paiement :
       <input type="radio" id="Visa" name="MéthodeDePaiement">
@@ -71,8 +72,10 @@
       <input type="text" required placeholder="xxxx-xxxx-xxxx-xxxx" id="NumCarteCredit">
       <label for="NumCarteCredit"></label>
     </div>
+  </fieldset>
     <div class="Livraison">
       <p>Informations de livraison</p>
+  <fieldset>
       <div class="InfosLiv">
         <input type="checkbox" id="Signature" name="Signature" required>
         Signature requise <br>
@@ -81,6 +84,7 @@
         Livrer à la même adresse que l'adresse de paiement
         <label for="MmAdresse"></label>
       </div>
+  </fieldset>
     </div>
     <button type="submit">Envoyer</button>
     <button type="reset">Annuler</button>
